@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AfroMatch</title>
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!----
+<header class="header">
+    <div class="container">
+        <h2><a href="index.html">AfroMatch</a></h2>
+    </div>
+</header>
+-->
+
+
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="img/afro.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                           <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li>
+        <a href="#">Browse <span class="arrow_carrot-down"></span></a>
+        <ul class="dropdown">
+            <li><a href="./anime-watching.html">Americans</a></li>
+            <li><a href="black-american.html">Black Americans</a></li>
+            <li><a href="african.html">Africans</a></li>
+            <li><a href="asian.html">Asians</a></li>
+        </ul>
+    </li>
+
+    <li><a href="./about.html">About Us</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+</ul>
+                        </nav>
+
+                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="./login.html"><span class="icon_profile"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+            <div id="mobile-menu-wrap"></div>  
+    </header>
+    <!-- Header End -->
+
+
+<section class="spad">
+    <div class="container">
+
+        <div class="section-title">
+            <h4>Contact Us</h4>
+        </div>
+
+        <p>If you have any questions or need support, feel free to reach out.</p>
+
+        <!-- CONTACT FORM -->
+        <form id="contactForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" id="conName" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="email" id="conEmail" class="form-control" placeholder="Your Email" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <textarea id="conMsg" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="site-btn">Send Message</button>
+        </form>
+
+        <!-- STYLED DIRECT CONTACT INFO -->
+        <div class="contact-info-grid mt-5">
+            <div class="info-item">
+                <i class="fa fa-whatsapp"></i>
+                <div>
+                    <h5>Reach us on WhatsApp</h5>
+                    <p>+254 712 345 678</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fa fa-map-marker"></i>
+                <div>
+                    <h5>Our Location</h5>
+                    <p>Nairobi, CBD • Majani huse, 3rd floor</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fa fa-envelope"></i>
+                <div>
+                    <h5>Email Support</h5>
+                    <p>matchafro4@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Styling the Contact Info Boxes */
+    .contact-info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        text-align: left;
+    }
+    .info-item {
+        display: flex;
+        align-items: center;
+        background: #fdfdfd;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #ff4d4d;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .info-item i {
+        font-size: 30px;
+        color: #ff4d4d;
+        margin-right: 20px;
+    }
+    .info-item h5 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #001f3f;
+    }
+    .info-item p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+    }
+    .site-btn {
+        background: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('conName').value.trim();
+        const email = document.getElementById('conEmail').value.trim();
+        const msg = document.getElementById('conMsg').value.trim();
+
+        if (name && email && msg) {
+            alert("✅ Success! Your message has been sent. We will get back to you shortly.");
+            this.reset(); // Clears the form
+        } else {
+            alert("❌ Please fill in all fields before sending.");
+        }
+    });
+</script>
+<style>
+    /* 1. Make the hamburger icon and menu container solid navy */
+.slicknav_menu {
+    background: #001f3f !important; /* Your Navy Blue */
+    padding: 10px !important;
+}
+
+/* 2. Force menu links to be White and Visible (Fixes the "invisible until hover" issue) */
+.slicknav_nav a {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px !important;
+}
+
+/* 3. Style the "Browse" dropdown arrow and text */
+.slicknav_item {
+    color: #ffffff !important;
+}
+
+/* 4. Style the Sub-menu (Americans, Africans, etc.) to stand out */
+.slicknav_nav ul {
+    background: rgba(0, 0, 0, 0.808) !important; /* Slightly lighter background */
+    margin: 5px 0 !important;
+    border-left: 3px solid #ff4d4d; /* AfroMatch Red accent */
+}
+
+/* 5. Hover state: Change to AfroMatch Red */
+.slicknav_nav a:hover, .slicknav_row:hover {
+    background: #ff4d4d !important;
+    color: #ffffff !important;
+    border-radius: 5px;
+}
+
+/* 6. Fix for the hamburger icon lines (making them white) */
+.slicknav_icon-bar {
+    background-color: #ffffff !important;
+}
+
+
+</style>
+
+<!-- Search model end -->
+
+
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton">
+            <span class="arrow_carrot-up"></span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- LOGO -->
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="index.html">
+                        <img src="img/afro.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- NAV LINKS -->
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="african.html">Browse</a></li>
+                         <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="col-lg-3">
+                <p>
+                    © <script>document.write(new Date().getFullYear());</script> AfroMatch. <br>
+                    All rights reserved. | <a href="privacy.html">Privacy Policy</a>
+                    Built for connecting people across East Africa ❤️
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+
+
+<script>
+$(document).ready(function(){
+
+    // INIT MOBILE MENU
+    $(".mobile-menu").slicknav({
+        prependTo: '#mobile-menu-wrap',
+        label: '',
+        allowParentLinks: true
+    });
+
+    // GET CURRENT PAGE
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // DESKTOP ACTIVE LINK
+    document.querySelectorAll(".header__menu ul li a").forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.parentElement.classList.add("active");
+
+            // Highlight "Browse" if inside dropdown
+            const parentDropdown = link.closest(".dropdown");
+            if (parentDropdown) {
+                parentDropdown.parentElement.classList.add("active");
+            }
+        }
+    });
+
+    // MOBILE ACTIVE LINK (AFTER slicknav builds menu)
+    setTimeout(() => {
+        $(".slicknav_nav a").each(function(){
+            if ($(this).attr("href") === currentPage) {
+                $(this).addClass("active-mobile");
+            }
+        });
+    }, 200);
+
+});
+</script>
+
+
+<script>
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".header__menu ul li a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+        link.parentElement.classList.add("active");
+
+        // ALSO highlight parent dropdown (Browse)
+        const parentDropdown = link.closest(".dropdown");
+        if (parentDropdown) {
+            parentDropdown.parentElement.classList.add("active");
+        }
+    }
+});
+</script>
+
+
+
+
+<script>
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+
+<script>
+const links = document.querySelectorAll(".header__menu ul li a");
+
+links.forEach(link => {
+    if (link.href === window.location.href) {
+        link.parentElement.classList.add("active");
+    }
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $(".mobile-menu").slicknav({
+        prependTo: '#mobile-menu-wrap',
+        label: '',
+        allowParentLinks: true
+    });
+});
+</script>
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/player.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</script>
+</body>
+</html>
