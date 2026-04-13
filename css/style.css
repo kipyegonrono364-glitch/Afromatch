@@ -199,6 +199,13 @@ body {
     margin-top: 5px;
 }
 
+.slicknav_btn {
+    background-color: #ff4d4d !important; /* Red background */
+    border-radius: 5px;
+}
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #ffffff !important; /* White bars */
+}
 
 
 .footer p {
