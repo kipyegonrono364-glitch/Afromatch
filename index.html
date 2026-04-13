@@ -188,15 +188,15 @@
 
 <style>
     /* Main Overlay */
-    .payment-popup {
-        display: none; /* Toggle with JS */
-        position: fixed;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: rgba(0, 0, 0, 0.85);
-        z-index: 9999;
-        display: flex; align-items: center; justify-content: center;
-        padding: 15px;
-    }
+.payment-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+}
 
     /* Fixed-size Card */
     .payment-card {
